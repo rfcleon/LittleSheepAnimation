@@ -21,6 +21,7 @@
 		E0A7190E1B6BBB9B004ACA90 /* DSLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719011B6BBB9B004ACA90 /* DSLSecondViewController.m */; };
 		E0A7190F1B6BBB9B004ACA90 /* DSLThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719031B6BBB9B004ACA90 /* DSLThirdViewController.m */; };
 		E0A719101B6BBB9B004ACA90 /* DSLThingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719071B6BBB9B004ACA90 /* DSLThingCell.m */; };
+		E0A719131B6BC438004ACA90 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719121B6BC438004ACA90 /* MyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		E0A719031B6BBB9B004ACA90 /* DSLThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThirdViewController.m; sourceTree = "<group>"; };
 		E0A719061B6BBB9B004ACA90 /* DSLThingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLThingCell.h; sourceTree = "<group>"; };
 		E0A719071B6BBB9B004ACA90 /* DSLThingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThingCell.m; sourceTree = "<group>"; };
+		E0A719111B6BC438004ACA90 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		E0A719121B6BC438004ACA90 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 		E0A719041B6BBB9B004ACA90 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E0A719111B6BC438004ACA90 /* MyView.h */,
+				E0A719121B6BC438004ACA90 /* MyView.m */,
 				E0A719051B6BBB9B004ACA90 /* Cells */,
 			);
 			path = Views;
@@ -237,6 +242,7 @@
 				E0A719091B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m in Sources */,
 				845A86341B6B60C400B45169 /* AppDelegate.m in Sources */,
 				E0A7190D1B6BBB9B004ACA90 /* DSLFirstViewController.m in Sources */,
+				E0A719131B6BC438004ACA90 /* MyView.m in Sources */,
 				E0A719101B6BBB9B004ACA90 /* DSLThingCell.m in Sources */,
 				845A86311B6B60C400B45169 /* main.m in Sources */,
 				E0A719081B6BBB9B004ACA90 /* DSLThing.m in Sources */,
