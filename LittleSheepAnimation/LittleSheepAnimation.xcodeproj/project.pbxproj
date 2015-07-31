@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		845A86311B6B60C400B45169 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A86301B6B60C400B45169 /* main.m */; };
 		845A86341B6B60C400B45169 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A86331B6B60C400B45169 /* AppDelegate.m */; };
-		845A86371B6B60C400B45169 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A86361B6B60C400B45169 /* FirstViewController.m */; };
-		845A863A1B6B60C400B45169 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A86391B6B60C400B45169 /* SecondViewController.m */; };
 		845A863D1B6B60C400B45169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845A863B1B6B60C400B45169 /* Main.storyboard */; };
 		845A863F1B6B60C400B45169 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845A863E1B6B60C400B45169 /* Images.xcassets */; };
 		845A86421B6B60C400B45169 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A86401B6B60C400B45169 /* LaunchScreen.xib */; };
+		E0A719081B6BBB9B004ACA90 /* DSLThing.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718F31B6BBB9B004ACA90 /* DSLThing.m */; };
+		E0A719091B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718F61B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m */; };
+		E0A7190A1B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718F81B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m */; };
+		E0A7190B1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718FA1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m */; };
+		E0A7190C1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718FC1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m */; };
+		E0A7190D1B6BBB9B004ACA90 /* DSLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718FF1B6BBB9B004ACA90 /* DSLFirstViewController.m */; };
+		E0A7190E1B6BBB9B004ACA90 /* DSLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719011B6BBB9B004ACA90 /* DSLSecondViewController.m */; };
+		E0A7190F1B6BBB9B004ACA90 /* DSLThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719031B6BBB9B004ACA90 /* DSLThirdViewController.m */; };
+		E0A719101B6BBB9B004ACA90 /* DSLThingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719071B6BBB9B004ACA90 /* DSLThingCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +29,27 @@
 		845A86301B6B60C400B45169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		845A86321B6B60C400B45169 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		845A86331B6B60C400B45169 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		845A86351B6B60C400B45169 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		845A86361B6B60C400B45169 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		845A86381B6B60C400B45169 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		845A86391B6B60C400B45169 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		845A863C1B6B60C400B45169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845A863E1B6B60C400B45169 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		845A86411B6B60C400B45169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E0A718F21B6BBB9B004ACA90 /* DSLThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLThing.h; sourceTree = "<group>"; };
+		E0A718F31B6BBB9B004ACA90 /* DSLThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThing.m; sourceTree = "<group>"; };
+		E0A718F51B6BBB9B004ACA90 /* DSLFirstToSecondTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLFirstToSecondTransition.h; sourceTree = "<group>"; };
+		E0A718F61B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLFirstToSecondTransition.m; sourceTree = "<group>"; };
+		E0A718F71B6BBB9B004ACA90 /* DSLSecondToFirstTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLSecondToFirstTransition.h; sourceTree = "<group>"; };
+		E0A718F81B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLSecondToFirstTransition.m; sourceTree = "<group>"; };
+		E0A718F91B6BBB9B004ACA90 /* DSLSecondToThirdTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLSecondToThirdTransition.h; sourceTree = "<group>"; };
+		E0A718FA1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLSecondToThirdTransition.m; sourceTree = "<group>"; };
+		E0A718FB1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLThirdToSecondTransition.h; sourceTree = "<group>"; };
+		E0A718FC1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThirdToSecondTransition.m; sourceTree = "<group>"; };
+		E0A718FE1B6BBB9B004ACA90 /* DSLFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLFirstViewController.h; sourceTree = "<group>"; };
+		E0A718FF1B6BBB9B004ACA90 /* DSLFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLFirstViewController.m; sourceTree = "<group>"; };
+		E0A719001B6BBB9B004ACA90 /* DSLSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLSecondViewController.h; sourceTree = "<group>"; };
+		E0A719011B6BBB9B004ACA90 /* DSLSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLSecondViewController.m; sourceTree = "<group>"; };
+		E0A719021B6BBB9B004ACA90 /* DSLThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLThirdViewController.h; sourceTree = "<group>"; };
+		E0A719031B6BBB9B004ACA90 /* DSLThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThirdViewController.m; sourceTree = "<group>"; };
+		E0A719061B6BBB9B004ACA90 /* DSLThingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLThingCell.h; sourceTree = "<group>"; };
+		E0A719071B6BBB9B004ACA90 /* DSLThingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThingCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +82,12 @@
 		845A862D1B6B60C400B45169 /* LittleSheepAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				E0A718F11B6BBB9B004ACA90 /* Models */,
+				E0A718F41B6BBB9B004ACA90 /* Transitions */,
+				E0A718FD1B6BBB9B004ACA90 /* ViewControllers */,
+				E0A719041B6BBB9B004ACA90 /* Views */,
 				845A86321B6B60C400B45169 /* AppDelegate.h */,
 				845A86331B6B60C400B45169 /* AppDelegate.m */,
-				845A86351B6B60C400B45169 /* FirstViewController.h */,
-				845A86361B6B60C400B45169 /* FirstViewController.m */,
-				845A86381B6B60C400B45169 /* SecondViewController.h */,
-				845A86391B6B60C400B45169 /* SecondViewController.m */,
 				845A863B1B6B60C400B45169 /* Main.storyboard */,
 				845A863E1B6B60C400B45169 /* Images.xcassets */,
 				845A86401B6B60C400B45169 /* LaunchScreen.xib */,
@@ -82,6 +103,60 @@
 				845A86301B6B60C400B45169 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0A718F11B6BBB9B004ACA90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0A718F21B6BBB9B004ACA90 /* DSLThing.h */,
+				E0A718F31B6BBB9B004ACA90 /* DSLThing.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E0A718F41B6BBB9B004ACA90 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				E0A718F51B6BBB9B004ACA90 /* DSLFirstToSecondTransition.h */,
+				E0A718F61B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m */,
+				E0A718F71B6BBB9B004ACA90 /* DSLSecondToFirstTransition.h */,
+				E0A718F81B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m */,
+				E0A718F91B6BBB9B004ACA90 /* DSLSecondToThirdTransition.h */,
+				E0A718FA1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m */,
+				E0A718FB1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.h */,
+				E0A718FC1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		E0A718FD1B6BBB9B004ACA90 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0A718FE1B6BBB9B004ACA90 /* DSLFirstViewController.h */,
+				E0A718FF1B6BBB9B004ACA90 /* DSLFirstViewController.m */,
+				E0A719001B6BBB9B004ACA90 /* DSLSecondViewController.h */,
+				E0A719011B6BBB9B004ACA90 /* DSLSecondViewController.m */,
+				E0A719021B6BBB9B004ACA90 /* DSLThirdViewController.h */,
+				E0A719031B6BBB9B004ACA90 /* DSLThirdViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E0A719041B6BBB9B004ACA90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E0A719051B6BBB9B004ACA90 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0A719051B6BBB9B004ACA90 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E0A719061B6BBB9B004ACA90 /* DSLThingCell.h */,
+				E0A719071B6BBB9B004ACA90 /* DSLThingCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,10 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845A863A1B6B60C400B45169 /* SecondViewController.m in Sources */,
+				E0A7190A1B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m in Sources */,
+				E0A7190B1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m in Sources */,
+				E0A7190F1B6BBB9B004ACA90 /* DSLThirdViewController.m in Sources */,
+				E0A7190E1B6BBB9B004ACA90 /* DSLSecondViewController.m in Sources */,
+				E0A7190C1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m in Sources */,
+				E0A719091B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m in Sources */,
 				845A86341B6B60C400B45169 /* AppDelegate.m in Sources */,
-				845A86371B6B60C400B45169 /* FirstViewController.m in Sources */,
+				E0A7190D1B6BBB9B004ACA90 /* DSLFirstViewController.m in Sources */,
+				E0A719101B6BBB9B004ACA90 /* DSLThingCell.m in Sources */,
 				845A86311B6B60C400B45169 /* main.m in Sources */,
+				E0A719081B6BBB9B004ACA90 /* DSLThing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +384,7 @@
 				845A86531B6B60C400B45169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
