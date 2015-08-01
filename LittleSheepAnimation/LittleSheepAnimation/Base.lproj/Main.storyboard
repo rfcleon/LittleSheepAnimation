@@ -112,7 +112,7 @@
         <!--Second View Controller-->
         <scene sceneID="tbN-7Q-0fB">
             <objects>
-                <viewController id="qHK-R8-JQp" customClass="DSLSecondViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="qHK-R8-JQp" customClass="DSLSecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="81R-ON-RVV"/>
                         <viewControllerLayoutGuide type="bottom" id="2L3-dz-zZK"/>
@@ -122,25 +122,25 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="khK-sd-STM">
-                                <rect key="frame" x="60" y="104" width="200" height="200"/>
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="21R-ib-z7l"/>
                                     <constraint firstAttribute="width" constant="200" id="lme-tH-ZNl"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="IVr-68-BMf" userLabel="Detail label">
-                                <rect key="frame" x="60" y="312" width="480" height="20"/>
+                                <rect key="frame" x="60" y="408" width="480" height="20"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="khK-sd-STM" secondAttribute="centerY" id="5bm-Ld-1M7"/>
                             <constraint firstItem="IVr-68-BMf" firstAttribute="top" secondItem="khK-sd-STM" secondAttribute="bottom" constant="8" id="ETU-tR-l22"/>
-                            <constraint firstItem="khK-sd-STM" firstAttribute="top" secondItem="9Vd-YU-nKM" secondAttribute="top" constant="104" id="GjG-GA-Kgr"/>
                             <constraint firstAttribute="trailing" secondItem="IVr-68-BMf" secondAttribute="trailing" constant="60" id="fRH-jw-6IN"/>
-                            <constraint firstItem="khK-sd-STM" firstAttribute="leading" secondItem="9Vd-YU-nKM" secondAttribute="leading" constant="60" id="nnY-z8-5Oo"/>
                             <constraint firstItem="IVr-68-BMf" firstAttribute="leading" secondItem="9Vd-YU-nKM" secondAttribute="leading" constant="60" id="oyc-bO-xbe"/>
+                            <constraint firstAttribute="centerX" secondItem="khK-sd-STM" secondAttribute="centerX" id="tEd-42-vLc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NII-Il-lMc">
@@ -150,6 +150,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="khK-sd-STM" id="WyY-0w-Ozh"/>
                         <outlet property="overviewLabel" destination="IVr-68-BMf" id="ZNH-rd-q9M"/>
@@ -171,16 +172,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnc-Fs-61W">
+                                <rect key="frame" x="0.0" y="64" width="600" height="336"/>
+                                <color key="backgroundColor" red="1" green="0.98742469300000002" blue="0.1659607545" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2W-rJ-i13">
-                                <rect key="frame" x="0.0" y="351" width="600" height="200"/>
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
                                 <color key="backgroundColor" red="0.25202321010000001" green="0.30467863719999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="noZ-t6-RGR"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnc-Fs-61W">
-                                <rect key="frame" x="0.0" y="64" width="600" height="287"/>
-                                <color key="backgroundColor" red="1" green="0.98742469300000002" blue="0.1659607545" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -191,9 +192,16 @@
                             <constraint firstAttribute="trailing" secondItem="j2W-rJ-i13" secondAttribute="trailing" id="bUJ-Bx-2XO"/>
                             <constraint firstItem="j2W-rJ-i13" firstAttribute="top" secondItem="bnc-Fs-61W" secondAttribute="bottom" id="f6F-r8-uWC"/>
                             <constraint firstItem="GWt-gl-KaV" firstAttribute="top" secondItem="j2W-rJ-i13" secondAttribute="bottom" id="oak-dG-e0o"/>
+                            <constraint firstItem="GWt-gl-KaV" firstAttribute="top" secondItem="j2W-rJ-i13" secondAttribute="bottom" id="pWq-Bl-Q5Q"/>
                             <constraint firstItem="bnc-Fs-61W" firstAttribute="top" secondItem="Fpk-Nc-ZKC" secondAttribute="bottom" id="zsq-Vg-GAe"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oak-dG-e0o"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="bgj-ea-KK4"/>
                     <connections>
                         <outlet property="bottomView" destination="j2W-rJ-i13" id="UbL-cl-oHp"/>
@@ -207,7 +215,7 @@
         <!--View Controller-->
         <scene sceneID="doe-KN-9TD">
             <objects>
-                <viewController id="Jr1-oF-Rh1" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="Jr1-oF-Rh1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fX0-ya-6cw"/>
                         <viewControllerLayoutGuide type="bottom" id="Cbh-Ym-OCu"/>

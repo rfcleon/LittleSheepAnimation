@@ -24,6 +24,8 @@
     
     UIView * containerView = [transitionContext containerView];
     [containerView insertSubview:toVC.view belowSubview:fromVC.view];
+    [toVC.view setNeedsLayout];
+    [toVC.view layoutIfNeeded];
     
     NSArray * topViewConstraints = toVC.topView.constraints;
     [toVC.topView removeConstraints:topViewConstraints];

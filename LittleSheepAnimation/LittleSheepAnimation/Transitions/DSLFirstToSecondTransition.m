@@ -34,6 +34,8 @@
     toVC.view.frame = [transitionContext finalFrameForViewController:toVC];
     toVC.view.alpha = 0;
     toVC.imageView.hidden = YES;
+    [toVC.view setNeedsLayout];
+    [toVC.view layoutIfNeeded];
     
     [containerView addSubview:toVC.view];
     [containerView addSubview:snapshot];
