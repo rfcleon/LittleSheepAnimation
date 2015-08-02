@@ -1,20 +1,13 @@
-//
-//  DSLSecondViewController.m
-//  TransitionExample
-//
-//  Created by Pete Callaway on 21/07/2013.
-//  Copyright (c) 2013 Dative Studios. All rights reserved.
-//
 
-#import "DSLSecondViewController.h"
+#import "LSASecondViewController.h"
 
-#import "DSLFirstViewController.h"
-#import "DSLThing.h"
-#import "DSLSecondToFirstTransition.h"
-#import "DSLThirdViewController.h"
-#import "DSLSecondToThirdTransition.h"
+#import "LSAFirstViewController.h"
+#import "LSAFirstVCCollectionCellModel.h"
+#import "LSASecondToFirstTransition.h"
+#import "LSAThirdViewController.h"
+#import "LSASecondToThirdTransition.h"
 
-@interface DSLSecondViewController ()<UINavigationControllerDelegate>
+@interface LSASecondViewController ()<UINavigationControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UILabel *overviewLabel;
 @property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactivePopTransition;
@@ -22,7 +15,7 @@
 @end
 
 
-@implementation DSLSecondViewController
+@implementation LSASecondViewController
 
 
 #pragma mark UIViewController methods
@@ -60,11 +53,11 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC {
     // Check if we're transitioning from this view controller to a DSLFirstViewController
-    if (fromVC == self && [toVC isKindOfClass:[DSLFirstViewController class]]) {
-        return [[DSLSecondToFirstTransition alloc] init];
+    if (fromVC == self && [toVC isKindOfClass:[LSAFirstViewController class]]) {
+        return [[LSASecondToFirstTransition alloc] init];
     }
-    else if (fromVC == self && [toVC isKindOfClass:[DSLThirdViewController class]]) {
-        return [[DSLSecondToThirdTransition alloc] init];
+    else if (fromVC == self && [toVC isKindOfClass:[LSAThirdViewController class]]) {
+        return [[LSASecondToThirdTransition alloc] init];
     }
     else {
         return nil;
@@ -73,7 +66,7 @@
 
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
 {
-    if ([animationController isKindOfClass:[DSLSecondToFirstTransition class]]) {
+    if ([animationController isKindOfClass:[LSASecondToFirstTransition class]]) {
         return self.interactivePopTransition;
     }
     return nil;

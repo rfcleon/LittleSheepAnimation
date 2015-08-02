@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 mykoma. All rights reserved.
 //
 
-#import "MyView.h"
+#import "LSAAnimationFirstView.h"
 
-@interface MyView ()
+@interface LSAAnimationFirstView ()
 
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint * constraint1;
 @property (nonatomic, strong) IBOutlet UIView * myView;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation MyView
+@implementation LSAAnimationFirstView
 
 - (void)awakeFromNib
 {

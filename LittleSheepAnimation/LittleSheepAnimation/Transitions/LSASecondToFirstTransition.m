@@ -1,17 +1,11 @@
-//
-//  DSLSecondToFirstTransition.m
-//  TransitionExample
-//
-//  Created by mykoma on 15/7/26.
-//  Copyright (c) 2015年 Dative Studios. All rights reserved.
-//
 
-#import "DSLSecondToFirstTransition.h"
-#import "DSLFirstViewController.h"
-#import "DSLSecondViewController.h"
-#import "DSLThingCell.h"
 
-@implementation DSLSecondToFirstTransition
+#import "LSASecondToFirstTransition.h"
+#import "LSAFirstViewController.h"
+#import "LSASecondViewController.h"
+#import "LSAFirstVCCollectionCell.h"
+
+@implementation LSASecondToFirstTransition
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
@@ -20,8 +14,8 @@
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    DSLSecondViewController * fromVC = (DSLSecondViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    DSLFirstViewController * toVC = (DSLFirstViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    LSASecondViewController * fromVC = (LSASecondViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    LSAFirstViewController * toVC = (LSAFirstViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     UIView * containerView = [transitionContext containerView];
     
@@ -29,7 +23,7 @@
     snapshot.frame = [containerView convertRect:fromVC.imageView.frame fromView:fromVC.imageView.superview];
     fromVC.imageView.hidden = YES;
     
-    DSLThingCell * cell = [toVC collectionViewCellForThing:fromVC.thing];
+    LSAFirstVCCollectionCell * cell = [toVC collectionViewCellForThing:fromVC.thing];
     cell.imageView.hidden = YES;
     
     toVC.view.frame = [transitionContext finalFrameForViewController:toVC];

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyView : UIView
+@interface LSAAnimationFirstView : UIView
 
 @end

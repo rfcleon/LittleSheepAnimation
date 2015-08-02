@@ -1,17 +1,10 @@
-//
-//  DSLFirstToSecondTransition.m
-//  TransitionExample
-//
-//  Created by mykoma on 15/7/26.
-//  Copyright (c) 2015年 Dative Studios. All rights reserved.
-//
 
-#import "DSLFirstToSecondTransition.h"
-#import "DSLFirstViewController.h"
-#import "DSLSecondViewController.h"
-#import "DSLThingCell.h"
+#import "LSAFirstToSecondTransition.h"
+#import "LSAFirstViewController.h"
+#import "LSASecondViewController.h"
+#import "LSAFirstVCCollectionCell.h"
 
-@implementation DSLFirstToSecondTransition
+@implementation LSAFirstToSecondTransition
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
@@ -20,13 +13,13 @@
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    DSLFirstViewController * fromVC = (DSLFirstViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    DSLSecondViewController * toVC = (DSLSecondViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    LSAFirstViewController * fromVC = (LSAFirstViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    LSASecondViewController * toVC = (LSASecondViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     UIView * containerView = [transitionContext containerView];
     
     NSIndexPath * path = [[fromVC.collectionView indexPathsForSelectedItems] firstObject];
-    DSLThingCell * cell = (DSLThingCell *)[fromVC.collectionView cellForItemAtIndexPath:path];
+    LSAFirstVCCollectionCell * cell = (LSAFirstVCCollectionCell *)[fromVC.collectionView cellForItemAtIndexPath:path];
     UIView * snapshot = [cell.imageView snapshotViewAfterScreenUpdates:NO];
     snapshot.frame = [containerView convertRect:cell.imageView.frame fromView:cell.imageView.superview];
     cell.imageView.hidden = YES;

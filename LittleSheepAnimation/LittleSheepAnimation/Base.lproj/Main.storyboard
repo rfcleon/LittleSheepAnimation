@@ -24,7 +24,7 @@
         <!--Animation-->
         <scene sceneID="81z-PO-GRQ">
             <objects>
-                <navigationController id="qMY-ZQ-nGC" sceneMemberID="viewController">
+                <navigationController title="Animation" id="qMY-ZQ-nGC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Animation" image="second" id="r19-YI-omk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TLB-Pn-ohk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -60,7 +60,7 @@
         <!--First View Controller-->
         <scene sceneID="W2o-Rm-Us3">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="jSX-Sv-Kyo" customClass="DSLFirstViewController" sceneMemberID="viewController">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="jSX-Sv-Kyo" customClass="LSAFirstViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Bsw-uH-nTO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
                             <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DSLThingCell" id="EjG-kW-C0X" customClass="DSLThingCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LSAFirstVCCollectionCell" id="EjG-kW-C0X" customClass="LSAFirstVCCollectionCell">
                                 <rect key="frame" x="0.0" y="74" width="155" height="183"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -112,7 +112,7 @@
         <!--Second View Controller-->
         <scene sceneID="tbN-7Q-0fB">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="qHK-R8-JQp" customClass="DSLSecondViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="qHK-R8-JQp" customClass="LSASecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="81R-ON-RVV"/>
                         <viewControllerLayoutGuide type="bottom" id="2L3-dz-zZK"/>
@@ -163,7 +163,7 @@
         <!--Third View Controller-->
         <scene sceneID="sWP-X9-1Ja">
             <objects>
-                <viewController id="dBH-N6-XGB" customClass="DSLThirdViewController" sceneMemberID="viewController">
+                <viewController id="dBH-N6-XGB" customClass="LSAThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fpk-Nc-ZKC"/>
                         <viewControllerLayoutGuide type="bottom" id="GWt-gl-KaV"/>
@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="2978" y="-1028"/>
         </scene>
-        <!--View Controller-->
+        <!--Animation-->
         <scene sceneID="doe-KN-9TD">
             <objects>
-                <viewController id="Jr1-oF-Rh1" sceneMemberID="viewController">
+                <viewController title="Animation" id="Jr1-oF-Rh1" customClass="LSAFirstAnimationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fX0-ya-6cw"/>
                         <viewControllerLayoutGuide type="bottom" id="Cbh-Ym-OCu"/>
@@ -224,7 +224,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHH-Cu-2im" customClass="MyView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHH-Cu-2im" customClass="LSAAnimationFirstView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thing1" translatesAutoresizingMaskIntoConstraints="NO" id="MnF-3R-Vmb">

@@ -1,16 +1,10 @@
-//
-//  DSLSecondToThirdTransition.m
-//  TransitionExample
-//
-//  Created by mykoma on 15/7/28.
-//  Copyright (c) 2015年 Dative Studios. All rights reserved.
-//
 
-#import "DSLSecondToThirdTransition.h"
-#import "DSLSecondViewController.h"
-#import "DSLThirdViewController.h"
 
-@implementation DSLSecondToThirdTransition
+#import "LSASecondToThirdTransition.h"
+#import "LSASecondViewController.h"
+#import "LSAThirdViewController.h"
+
+@implementation LSASecondToThirdTransition
 
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
@@ -19,8 +13,8 @@
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    DSLSecondViewController * fromVC = (DSLSecondViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    DSLThirdViewController * toVC = (DSLThirdViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    LSASecondViewController * fromVC = (LSASecondViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    LSAThirdViewController * toVC = (LSAThirdViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     UIView * containerView = [transitionContext containerView];
     [containerView insertSubview:toVC.view belowSubview:fromVC.view];

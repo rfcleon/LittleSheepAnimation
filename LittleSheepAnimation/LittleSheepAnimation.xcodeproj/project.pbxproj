@@ -12,16 +12,17 @@
 		845A863D1B6B60C400B45169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845A863B1B6B60C400B45169 /* Main.storyboard */; };
 		845A863F1B6B60C400B45169 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845A863E1B6B60C400B45169 /* Images.xcassets */; };
 		845A86421B6B60C400B45169 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845A86401B6B60C400B45169 /* LaunchScreen.xib */; };
-		E0A719081B6BBB9B004ACA90 /* DSLThing.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718F31B6BBB9B004ACA90 /* DSLThing.m */; };
-		E0A719091B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718F61B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m */; };
-		E0A7190A1B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718F81B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m */; };
-		E0A7190B1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718FA1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m */; };
-		E0A7190C1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718FC1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m */; };
-		E0A7190D1B6BBB9B004ACA90 /* DSLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718FF1B6BBB9B004ACA90 /* DSLFirstViewController.m */; };
-		E0A7190E1B6BBB9B004ACA90 /* DSLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719011B6BBB9B004ACA90 /* DSLSecondViewController.m */; };
-		E0A7190F1B6BBB9B004ACA90 /* DSLThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719031B6BBB9B004ACA90 /* DSLThirdViewController.m */; };
-		E0A719101B6BBB9B004ACA90 /* DSLThingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719071B6BBB9B004ACA90 /* DSLThingCell.m */; };
-		E0A719131B6BC438004ACA90 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719121B6BC438004ACA90 /* MyView.m */; };
+		E05279491B6E149D00C7FE2C /* LSAFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E05279441B6E149D00C7FE2C /* LSAFirstViewController.m */; };
+		E052794A1B6E149D00C7FE2C /* LSASecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E05279461B6E149D00C7FE2C /* LSASecondViewController.m */; };
+		E052794B1B6E149D00C7FE2C /* LSAThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E05279481B6E149D00C7FE2C /* LSAThirdViewController.m */; };
+		E052794E1B6E157F00C7FE2C /* LSAFirstAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E052794D1B6E157F00C7FE2C /* LSAFirstAnimationViewController.m */; };
+		E0A719081B6BBB9B004ACA90 /* LSAFirstVCCollectionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718F31B6BBB9B004ACA90 /* LSAFirstVCCollectionCellModel.m */; };
+		E0A719091B6BBB9B004ACA90 /* LSAFirstToSecondTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718F61B6BBB9B004ACA90 /* LSAFirstToSecondTransition.m */; };
+		E0A7190A1B6BBB9B004ACA90 /* LSASecondToFirstTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718F81B6BBB9B004ACA90 /* LSASecondToFirstTransition.m */; };
+		E0A7190B1B6BBB9B004ACA90 /* LSASecondToThirdTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718FA1B6BBB9B004ACA90 /* LSASecondToThirdTransition.m */; };
+		E0A7190C1B6BBB9B004ACA90 /* LSAThirdToSecondTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A718FC1B6BBB9B004ACA90 /* LSAThirdToSecondTransition.m */; };
+		E0A719101B6BBB9B004ACA90 /* LSAFirstVCCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719071B6BBB9B004ACA90 /* LSAFirstVCCollectionCell.m */; };
+		E0A719131B6BC438004ACA90 /* LSAAnimationFirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A719121B6BC438004ACA90 /* LSAAnimationFirstView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,26 +34,28 @@
 		845A863C1B6B60C400B45169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845A863E1B6B60C400B45169 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		845A86411B6B60C400B45169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E0A718F21B6BBB9B004ACA90 /* DSLThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLThing.h; sourceTree = "<group>"; };
-		E0A718F31B6BBB9B004ACA90 /* DSLThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThing.m; sourceTree = "<group>"; };
-		E0A718F51B6BBB9B004ACA90 /* DSLFirstToSecondTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLFirstToSecondTransition.h; sourceTree = "<group>"; };
-		E0A718F61B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLFirstToSecondTransition.m; sourceTree = "<group>"; };
-		E0A718F71B6BBB9B004ACA90 /* DSLSecondToFirstTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLSecondToFirstTransition.h; sourceTree = "<group>"; };
-		E0A718F81B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLSecondToFirstTransition.m; sourceTree = "<group>"; };
-		E0A718F91B6BBB9B004ACA90 /* DSLSecondToThirdTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLSecondToThirdTransition.h; sourceTree = "<group>"; };
-		E0A718FA1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLSecondToThirdTransition.m; sourceTree = "<group>"; };
-		E0A718FB1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLThirdToSecondTransition.h; sourceTree = "<group>"; };
-		E0A718FC1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThirdToSecondTransition.m; sourceTree = "<group>"; };
-		E0A718FE1B6BBB9B004ACA90 /* DSLFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLFirstViewController.h; sourceTree = "<group>"; };
-		E0A718FF1B6BBB9B004ACA90 /* DSLFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLFirstViewController.m; sourceTree = "<group>"; };
-		E0A719001B6BBB9B004ACA90 /* DSLSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLSecondViewController.h; sourceTree = "<group>"; };
-		E0A719011B6BBB9B004ACA90 /* DSLSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLSecondViewController.m; sourceTree = "<group>"; };
-		E0A719021B6BBB9B004ACA90 /* DSLThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLThirdViewController.h; sourceTree = "<group>"; };
-		E0A719031B6BBB9B004ACA90 /* DSLThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThirdViewController.m; sourceTree = "<group>"; };
-		E0A719061B6BBB9B004ACA90 /* DSLThingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLThingCell.h; sourceTree = "<group>"; };
-		E0A719071B6BBB9B004ACA90 /* DSLThingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLThingCell.m; sourceTree = "<group>"; };
-		E0A719111B6BC438004ACA90 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
-		E0A719121B6BC438004ACA90 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		E05279431B6E149D00C7FE2C /* LSAFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAFirstViewController.h; sourceTree = "<group>"; };
+		E05279441B6E149D00C7FE2C /* LSAFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAFirstViewController.m; sourceTree = "<group>"; };
+		E05279451B6E149D00C7FE2C /* LSASecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSASecondViewController.h; sourceTree = "<group>"; };
+		E05279461B6E149D00C7FE2C /* LSASecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSASecondViewController.m; sourceTree = "<group>"; };
+		E05279471B6E149D00C7FE2C /* LSAThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAThirdViewController.h; sourceTree = "<group>"; };
+		E05279481B6E149D00C7FE2C /* LSAThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAThirdViewController.m; sourceTree = "<group>"; };
+		E052794C1B6E157F00C7FE2C /* LSAFirstAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAFirstAnimationViewController.h; sourceTree = "<group>"; };
+		E052794D1B6E157F00C7FE2C /* LSAFirstAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAFirstAnimationViewController.m; sourceTree = "<group>"; };
+		E0A718F21B6BBB9B004ACA90 /* LSAFirstVCCollectionCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAFirstVCCollectionCellModel.h; sourceTree = "<group>"; };
+		E0A718F31B6BBB9B004ACA90 /* LSAFirstVCCollectionCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAFirstVCCollectionCellModel.m; sourceTree = "<group>"; };
+		E0A718F51B6BBB9B004ACA90 /* LSAFirstToSecondTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAFirstToSecondTransition.h; sourceTree = "<group>"; };
+		E0A718F61B6BBB9B004ACA90 /* LSAFirstToSecondTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAFirstToSecondTransition.m; sourceTree = "<group>"; };
+		E0A718F71B6BBB9B004ACA90 /* LSASecondToFirstTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSASecondToFirstTransition.h; sourceTree = "<group>"; };
+		E0A718F81B6BBB9B004ACA90 /* LSASecondToFirstTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSASecondToFirstTransition.m; sourceTree = "<group>"; };
+		E0A718F91B6BBB9B004ACA90 /* LSASecondToThirdTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSASecondToThirdTransition.h; sourceTree = "<group>"; };
+		E0A718FA1B6BBB9B004ACA90 /* LSASecondToThirdTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSASecondToThirdTransition.m; sourceTree = "<group>"; };
+		E0A718FB1B6BBB9B004ACA90 /* LSAThirdToSecondTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAThirdToSecondTransition.h; sourceTree = "<group>"; };
+		E0A718FC1B6BBB9B004ACA90 /* LSAThirdToSecondTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAThirdToSecondTransition.m; sourceTree = "<group>"; };
+		E0A719061B6BBB9B004ACA90 /* LSAFirstVCCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAFirstVCCollectionCell.h; sourceTree = "<group>"; };
+		E0A719071B6BBB9B004ACA90 /* LSAFirstVCCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAFirstVCCollectionCell.m; sourceTree = "<group>"; };
+		E0A719111B6BC438004ACA90 /* LSAAnimationFirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSAAnimationFirstView.h; sourceTree = "<group>"; };
+		E0A719121B6BC438004ACA90 /* LSAAnimationFirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAAnimationFirstView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +111,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E05279411B6E149D00C7FE2C /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				E052794C1B6E157F00C7FE2C /* LSAFirstAnimationViewController.h */,
+				E052794D1B6E157F00C7FE2C /* LSAFirstAnimationViewController.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		E05279421B6E149D00C7FE2C /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				E05279431B6E149D00C7FE2C /* LSAFirstViewController.h */,
+				E05279441B6E149D00C7FE2C /* LSAFirstViewController.m */,
+				E05279451B6E149D00C7FE2C /* LSASecondViewController.h */,
+				E05279461B6E149D00C7FE2C /* LSASecondViewController.m */,
+				E05279471B6E149D00C7FE2C /* LSAThirdViewController.h */,
+				E05279481B6E149D00C7FE2C /* LSAThirdViewController.m */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
 		E0A718F11B6BBB9B004ACA90 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E0A718F21B6BBB9B004ACA90 /* DSLThing.h */,
-				E0A718F31B6BBB9B004ACA90 /* DSLThing.m */,
+				E0A718F21B6BBB9B004ACA90 /* LSAFirstVCCollectionCellModel.h */,
+				E0A718F31B6BBB9B004ACA90 /* LSAFirstVCCollectionCellModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,14 +145,14 @@
 		E0A718F41B6BBB9B004ACA90 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				E0A718F51B6BBB9B004ACA90 /* DSLFirstToSecondTransition.h */,
-				E0A718F61B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m */,
-				E0A718F71B6BBB9B004ACA90 /* DSLSecondToFirstTransition.h */,
-				E0A718F81B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m */,
-				E0A718F91B6BBB9B004ACA90 /* DSLSecondToThirdTransition.h */,
-				E0A718FA1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m */,
-				E0A718FB1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.h */,
-				E0A718FC1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m */,
+				E0A718F51B6BBB9B004ACA90 /* LSAFirstToSecondTransition.h */,
+				E0A718F61B6BBB9B004ACA90 /* LSAFirstToSecondTransition.m */,
+				E0A718F71B6BBB9B004ACA90 /* LSASecondToFirstTransition.h */,
+				E0A718F81B6BBB9B004ACA90 /* LSASecondToFirstTransition.m */,
+				E0A718F91B6BBB9B004ACA90 /* LSASecondToThirdTransition.h */,
+				E0A718FA1B6BBB9B004ACA90 /* LSASecondToThirdTransition.m */,
+				E0A718FB1B6BBB9B004ACA90 /* LSAThirdToSecondTransition.h */,
+				E0A718FC1B6BBB9B004ACA90 /* LSAThirdToSecondTransition.m */,
 			);
 			path = Transitions;
 			sourceTree = "<group>";
@@ -135,12 +160,8 @@
 		E0A718FD1B6BBB9B004ACA90 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E0A718FE1B6BBB9B004ACA90 /* DSLFirstViewController.h */,
-				E0A718FF1B6BBB9B004ACA90 /* DSLFirstViewController.m */,
-				E0A719001B6BBB9B004ACA90 /* DSLSecondViewController.h */,
-				E0A719011B6BBB9B004ACA90 /* DSLSecondViewController.m */,
-				E0A719021B6BBB9B004ACA90 /* DSLThirdViewController.h */,
-				E0A719031B6BBB9B004ACA90 /* DSLThirdViewController.m */,
+				E05279411B6E149D00C7FE2C /* Animations */,
+				E05279421B6E149D00C7FE2C /* Transitions */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,8 +169,8 @@
 		E0A719041B6BBB9B004ACA90 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E0A719111B6BC438004ACA90 /* MyView.h */,
-				E0A719121B6BC438004ACA90 /* MyView.m */,
+				E0A719111B6BC438004ACA90 /* LSAAnimationFirstView.h */,
+				E0A719121B6BC438004ACA90 /* LSAAnimationFirstView.m */,
 				E0A719051B6BBB9B004ACA90 /* Cells */,
 			);
 			path = Views;
@@ -158,8 +179,8 @@
 		E0A719051B6BBB9B004ACA90 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				E0A719061B6BBB9B004ACA90 /* DSLThingCell.h */,
-				E0A719071B6BBB9B004ACA90 /* DSLThingCell.m */,
+				E0A719061B6BBB9B004ACA90 /* LSAFirstVCCollectionCell.h */,
+				E0A719071B6BBB9B004ACA90 /* LSAFirstVCCollectionCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -234,18 +255,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0A7190A1B6BBB9B004ACA90 /* DSLSecondToFirstTransition.m in Sources */,
-				E0A7190B1B6BBB9B004ACA90 /* DSLSecondToThirdTransition.m in Sources */,
-				E0A7190F1B6BBB9B004ACA90 /* DSLThirdViewController.m in Sources */,
-				E0A7190E1B6BBB9B004ACA90 /* DSLSecondViewController.m in Sources */,
-				E0A7190C1B6BBB9B004ACA90 /* DSLThirdToSecondTransition.m in Sources */,
-				E0A719091B6BBB9B004ACA90 /* DSLFirstToSecondTransition.m in Sources */,
+				E0A7190A1B6BBB9B004ACA90 /* LSASecondToFirstTransition.m in Sources */,
+				E0A7190B1B6BBB9B004ACA90 /* LSASecondToThirdTransition.m in Sources */,
+				E0A7190C1B6BBB9B004ACA90 /* LSAThirdToSecondTransition.m in Sources */,
+				E0A719091B6BBB9B004ACA90 /* LSAFirstToSecondTransition.m in Sources */,
+				E05279491B6E149D00C7FE2C /* LSAFirstViewController.m in Sources */,
+				E052794A1B6E149D00C7FE2C /* LSASecondViewController.m in Sources */,
 				845A86341B6B60C400B45169 /* AppDelegate.m in Sources */,
-				E0A7190D1B6BBB9B004ACA90 /* DSLFirstViewController.m in Sources */,
-				E0A719131B6BC438004ACA90 /* MyView.m in Sources */,
-				E0A719101B6BBB9B004ACA90 /* DSLThingCell.m in Sources */,
+				E0A719131B6BC438004ACA90 /* LSAAnimationFirstView.m in Sources */,
+				E0A719101B6BBB9B004ACA90 /* LSAFirstVCCollectionCell.m in Sources */,
+				E052794B1B6E149D00C7FE2C /* LSAThirdViewController.m in Sources */,
 				845A86311B6B60C400B45169 /* main.m in Sources */,
-				E0A719081B6BBB9B004ACA90 /* DSLThing.m in Sources */,
+				E052794E1B6E157F00C7FE2C /* LSAFirstAnimationViewController.m in Sources */,
+				E0A719081B6BBB9B004ACA90 /* LSAFirstVCCollectionCellModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

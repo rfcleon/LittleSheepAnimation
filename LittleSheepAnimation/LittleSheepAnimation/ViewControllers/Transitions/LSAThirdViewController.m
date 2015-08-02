@@ -1,20 +1,14 @@
-//
-//  DSLThirdViewController.m
-//  TransitionExample
-//
-//  Created by mykoma on 15/7/28.
-//  Copyright (c) 2015年 Dative Studios. All rights reserved.
-//
 
-#import "DSLThirdViewController.h"
-#import "DSLSecondViewController.h"
-#import "DSLThirdToSecondTransition.h"
 
-@interface DSLThirdViewController () <UINavigationControllerDelegate>
+#import "LSAThirdViewController.h"
+#import "LSASecondViewController.h"
+#import "LSAThirdToSecondTransition.h"
+
+@interface LSAThirdViewController () <UINavigationControllerDelegate>
 
 @end
 
-@implementation DSLThirdViewController
+@implementation LSAThirdViewController
 
 - (void)viewDidLoad
 {
@@ -40,8 +34,8 @@
                                                 fromViewController:(UIViewController *)fromVC
                                                   toViewController:(UIViewController *)toVC
 {
-    if (fromVC == self && [toVC isKindOfClass:[DSLSecondViewController class]]) {
-        return [[DSLThirdToSecondTransition alloc] init];
+    if (fromVC == self && [toVC isKindOfClass:[LSASecondViewController class]]) {
+        return [[LSAThirdToSecondTransition alloc] init];
     }
     return nil;
 }

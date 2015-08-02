@@ -1,31 +1,25 @@
-//
-//  DSLFirstViewController.m
-//  TransitionExample
-//
-//  Created by Pete Callaway on 21/07/2013.
-//  Copyright (c) 2013 Dative Studios. All rights reserved.
-//
 
-#import "DSLFirstViewController.h"
 
-#import "DSLFirstToSecondTransition.h"
-#import "DSLThing.h"
-#import "DSLThingCell.h"
-#import "DSLSecondViewController.h"
+#import "LSAFirstViewController.h"
 
-@interface DSLFirstViewController ()<UINavigationControllerDelegate>
+#import "LSAFirstToSecondTransition.h"
+#import "LSAFirstVCCollectionCellModel.h"
+#import "LSAFirstVCCollectionCell.h"
+#import "LSASecondViewController.h"
+
+@interface LSAFirstViewController ()<UINavigationControllerDelegate>
 
 @property (nonatomic, strong) NSArray *things;
 
 @end
 
 
-@implementation DSLFirstViewController
+@implementation LSAFirstViewController
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self != nil) {
-        _things = [DSLThing exampleThings];
+        _things = [LSAFirstVCCollectionCellModel exampleThings];
         self.title = @"Things";
     }
 
@@ -51,13 +45,13 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.destinationViewController isKindOfClass:[DSLSecondViewController class]]) {
+    if ([segue.destinationViewController isKindOfClass:[LSASecondViewController class]]) {
         // Get the selected item index path
         NSIndexPath *selectedIndexPath = [[self.collectionView indexPathsForSelectedItems] firstObject];
 
         // Set the thing on the view controller we're about to show
         if (selectedIndexPath != nil) {
-            DSLSecondViewController *secondViewController = segue.destinationViewController;
+            LSASecondViewController *secondViewController = segue.destinationViewController;
             secondViewController.thing = self.things[selectedIndexPath.row];
         }
     }
@@ -68,8 +62,8 @@
                                                 fromViewController:(UIViewController *)fromVC
                                                   toViewController:(UIViewController *)toVC
 {
-    if (fromVC == self && [toVC isKindOfClass:[DSLSecondViewController class]]) {
-        return [[DSLFirstToSecondTransition alloc] init];
+    if (fromVC == self && [toVC isKindOfClass:[LSASecondViewController class]]) {
+        return [[LSAFirstToSecondTransition alloc] init];
     }
     return nil;
 }
@@ -85,9 +79,9 @@
 }
 
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    DSLThingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([DSLThingCell class]) forIndexPath:indexPath];
+    LSAFirstVCCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([LSAFirstVCCollectionCell class]) forIndexPath:indexPath];
 
-    DSLThing *thing = self.things[indexPath.row];
+    LSAFirstVCCollectionCellModel *thing = self.things[indexPath.row];
     cell.titleLabel.text = thing.title;
     cell.imageView.image = thing.image;
 
@@ -97,13 +91,13 @@
 
 #pragma mark
 
-- (DSLThingCell*)collectionViewCellForThing:(DSLThing*)thing {
+- (LSAFirstVCCollectionCell*)collectionViewCellForThing:(LSAFirstVCCollectionCellModel*)thing {
     NSUInteger thingIndex = [self.things indexOfObject:thing];
     if (thingIndex == NSNotFound) {
         return nil;
     }
 
-    return (DSLThingCell*)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:thingIndex inSection:0]];
+    return (LSAFirstVCCollectionCell*)[self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:thingIndex inSection:0]];
 }
 
 @end
