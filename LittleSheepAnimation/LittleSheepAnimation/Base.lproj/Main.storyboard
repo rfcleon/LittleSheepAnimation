@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Transition-->
@@ -235,16 +236,26 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5o-pm-xWU">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="44"/>
                                         <color key="backgroundColor" red="1" green="0.98742469300000002" blue="0.1659607545" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="WJm-SO-NSL"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Open">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="touchOn:" destination="QHH-Cu-2im" eventType="touchUpInside" id="99L-Ot-t8q"/>
+                                            <action selector="open:" destination="QHH-Cu-2im" eventType="touchUpInside" id="AwQ-Qm-nsf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgS-e1-gQi">
+                                        <rect key="frame" x="450" y="0.0" width="150" height="44"/>
+                                        <color key="backgroundColor" red="0.30031720680000001" green="1" blue="0.70229776060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="close:" destination="QHH-Cu-2im" eventType="touchUpInside" id="evq-Bf-7cB"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSt-nZ-FsY">
@@ -258,7 +269,7 @@
                                         <rect key="frame" x="0.0" y="244" width="600" height="243"/>
                                         <color key="backgroundColor" red="0.25202321010000001" green="0.30467863719999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" priority="750" constant="356" id="63Q-BV-xzh"/>
+                                            <constraint firstAttribute="height" priority="750" constant="100" id="63Q-BV-xzh"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -268,20 +279,24 @@
                                     <constraint firstItem="FSt-nZ-FsY" firstAttribute="leading" secondItem="QHH-Cu-2im" secondAttribute="leading" id="5AB-yp-qIC"/>
                                     <constraint firstItem="w0N-po-6sC" firstAttribute="top" secondItem="FSt-nZ-FsY" secondAttribute="bottom" id="9Bi-UL-1QE"/>
                                     <constraint firstItem="w0N-po-6sC" firstAttribute="leading" secondItem="QHH-Cu-2im" secondAttribute="leading" id="A2E-wj-k5v"/>
-                                    <constraint firstItem="z5o-pm-xWU" firstAttribute="top" secondItem="QHH-Cu-2im" secondAttribute="top" id="RYg-Q3-dex"/>
-                                    <constraint firstAttribute="trailing" secondItem="z5o-pm-xWU" secondAttribute="trailing" id="Rqr-Je-9sF"/>
+                                    <constraint firstItem="NgS-e1-gQi" firstAttribute="leading" secondItem="z5o-pm-xWU" secondAttribute="trailing" id="AQL-sB-PlL"/>
+                                    <constraint firstItem="z5o-pm-xWU" firstAttribute="leading" secondItem="QHH-Cu-2im" secondAttribute="leading" id="I0x-Lf-EMG"/>
+                                    <constraint firstItem="z5o-pm-xWU" firstAttribute="height" secondItem="NgS-e1-gQi" secondAttribute="height" id="K5z-fP-uvW"/>
+                                    <constraint firstItem="z5o-pm-xWU" firstAttribute="width" secondItem="QHH-Cu-2im" secondAttribute="width" multiplier="3:4" id="NZC-zU-sYG"/>
+                                    <constraint firstAttribute="trailing" secondItem="NgS-e1-gQi" secondAttribute="trailing" id="RMB-Iy-SKO"/>
+                                    <constraint firstItem="FSt-nZ-FsY" firstAttribute="top" secondItem="NgS-e1-gQi" secondAttribute="bottom" id="Sb6-az-53n"/>
+                                    <constraint firstItem="NgS-e1-gQi" firstAttribute="top" secondItem="QHH-Cu-2im" secondAttribute="top" id="ewK-Xc-ijL"/>
+                                    <constraint firstItem="z5o-pm-xWU" firstAttribute="top" secondItem="QHH-Cu-2im" secondAttribute="top" id="fpV-4y-oQ8"/>
                                     <constraint firstAttribute="trailing" secondItem="FSt-nZ-FsY" secondAttribute="trailing" id="g2k-El-XvO"/>
-                                    <constraint firstItem="FSt-nZ-FsY" firstAttribute="top" secondItem="z5o-pm-xWU" secondAttribute="bottom" id="niQ-Z5-01h"/>
                                     <constraint firstAttribute="trailing" secondItem="w0N-po-6sC" secondAttribute="trailing" id="uZM-B9-u8V"/>
                                     <constraint firstAttribute="bottom" secondItem="w0N-po-6sC" secondAttribute="bottom" id="vfK-kJ-bdz"/>
                                     <constraint firstAttribute="centerY" secondItem="MnF-3R-Vmb" secondAttribute="centerY" id="wHx-Sn-sEj"/>
-                                    <constraint firstItem="z5o-pm-xWU" firstAttribute="leading" secondItem="QHH-Cu-2im" secondAttribute="leading" id="xc0-kK-Bpd"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="constraint1" destination="BMK-7w-MVf" id="b2l-uB-YKy"/>
-                                    <outlet property="constraint2" destination="9Bi-UL-1QE" id="1Va-YM-d8e"/>
-                                    <outlet property="constraint3" destination="63Q-BV-xzh" id="JBy-80-G8a"/>
+                                    <outlet property="bottomViewRelateTopViewConstraint" destination="9Bi-UL-1QE" id="SUD-WN-M1a"/>
                                     <outlet property="myView" destination="w0N-po-6sC" id="hs0-c8-WBJ"/>
+                                    <outlet property="openWitdhConstraint" destination="NZC-zU-sYG" id="vxr-2l-Egy"/>
+                                    <outlet property="topViewHeightConstraint" destination="BMK-7w-MVf" id="3eU-y9-baB"/>
                                 </connections>
                             </view>
                         </subviews>
