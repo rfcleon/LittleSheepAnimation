@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188BC2391CA9689300BE18E1 /* Trasitions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188BC2381CA9689300BE18E1 /* Trasitions.storyboard */; };
+		188BC23B1CA96D6E00BE18E1 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188BC23A1CA96D6E00BE18E1 /* Animation.storyboard */; };
 		845A86311B6B60C400B45169 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A86301B6B60C400B45169 /* main.m */; };
 		845A86341B6B60C400B45169 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845A86331B6B60C400B45169 /* AppDelegate.m */; };
 		845A863D1B6B60C400B45169 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845A863B1B6B60C400B45169 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		188BC2381CA9689300BE18E1 /* Trasitions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trasitions.storyboard; sourceTree = "<group>"; };
+		188BC23A1CA96D6E00BE18E1 /* Animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
 		845A862B1B6B60C400B45169 /* LittleSheepAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleSheepAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845A862F1B6B60C400B45169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845A86301B6B60C400B45169 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				845A863E1B6B60C400B45169 /* Images.xcassets */,
 				845A86401B6B60C400B45169 /* LaunchScreen.xib */,
 				845A862E1B6B60C400B45169 /* Supporting Files */,
+				188BC2381CA9689300BE18E1 /* Trasitions.storyboard */,
+				188BC23A1CA96D6E00BE18E1 /* Animation.storyboard */,
 			);
 			path = LittleSheepAnimation;
 			sourceTree = "<group>";
@@ -242,9 +248,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188BC2391CA9689300BE18E1 /* Trasitions.storyboard in Resources */,
 				845A863D1B6B60C400B45169 /* Main.storyboard in Resources */,
 				845A86421B6B60C400B45169 /* LaunchScreen.xib in Resources */,
 				845A863F1B6B60C400B45169 /* Images.xcassets in Resources */,
+				188BC23B1CA96D6E00BE18E1 /* Animation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LittleSheepAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -388,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LittleSheepAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
